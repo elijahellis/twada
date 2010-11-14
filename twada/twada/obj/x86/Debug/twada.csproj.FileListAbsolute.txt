@@ -1,0 +1,10 @@
+C:\Users\Elijah\AppData\Local\Temporary Projects\twada\bin\Debug\twada.exe
+C:\Users\Elijah\AppData\Local\Temporary Projects\twada\bin\Debug\twada.pdb
+C:\Users\Elijah\AppData\Local\Temporary Projects\twada\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Elijah\AppData\Local\Temporary Projects\twada\obj\x86\Debug\twada.exe
+C:\Users\Elijah\AppData\Local\Temporary Projects\twada\obj\x86\Debug\twada.pdb
+C:\Users\Elijah\Documents\Visual Studio 2010\C# Projects\twada\twada\obj\x86\Debug\twada.exe
+C:\Users\Elijah\Documents\Visual Studio 2010\C# Projects\twada\twada\bin\Debug\twada.exe
+C:\Users\Elijah\Documents\Visual Studio 2010\C# Projects\twada\twada\bin\Debug\twada.pdb
+C:\Users\Elijah\Documents\Visual Studio 2010\C# Projects\twada\twada\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Elijah\Documents\Visual Studio 2010\C# Projects\twada\twada\obj\x86\Debug\twada.pdb
