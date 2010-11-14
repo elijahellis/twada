@@ -1,2 +1,2 @@
 twada is a console Twitter application designed and managed to be as lightweight and as easy-to-use as possible...
-Use the source-code as more of a template rather than to build-upon, as it is an example to show how easily the Twitter API is to use without creating entire code-files and libraries for its use.
+Use the source-code as more of a template rather than to build-upon, as it is an example to show how easily the Twitter API is to use without creating entire code-files and libraries for such cases.
