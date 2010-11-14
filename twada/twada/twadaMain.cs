@@ -7,6 +7,8 @@ namespace twada
 {
     class twadaMain
     {
+        static public string UserArg;
+
         static void Main(string[] args)
         {
             var UserOutput = Console.Out;
@@ -14,10 +16,18 @@ namespace twada
             Console.Clear();
             if (args.Length > 0)
             {
-                if (args[0] == "-pub")
+                if (args[0] == "-public")
                 {
                     UserOutput.WriteLine("Retrieving public timeline...");
                     var ThreadStart = new System.Threading.ThreadStart(GetTwitterPublic);
+                    var BeginGet = new System.Threading.Thread(ThreadStart);
+                    BeginGet.Start();
+                }
+                if (args[0].StartsWith("@"))
+                {
+                    UserArg = args[0].Substring(1);
+                    UserOutput.WriteLine("Retrieving " + UserArg + "'s timeline...");
+                    var ThreadStart = new System.Threading.ThreadStart(GetTwitterUser);
                     var BeginGet = new System.Threading.Thread(ThreadStart);
                     BeginGet.Start();
                 }
@@ -47,6 +57,31 @@ namespace twada
             Console.ForegroundColor = ConsoleColor.White;
 
             for (i = 0; i != Statuses.Length ; i += 1)
+            {
+                Console.Out.WriteLine(Statuses[i]);
+            }
+
+            twRequest = null;
+            twDocument = null;
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+        }
+
+        static public void GetTwitterUser()
+        {
+
+            var twRequest = System.Net.HttpWebRequest.Create("http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=" + UserArg);
+            twRequest.ImpersonationLevel = System.Security.Principal.TokenImpersonationLevel.Anonymous;
+            twRequest.AuthenticationLevel = System.Net.Security.AuthenticationLevel.None;
+
+            var twDocument = new XmlDocument();
+            twDocument.LoadXml(new System.IO.StreamReader(twRequest.GetResponse().GetResponseStream()).ReadToEnd());
+            int i;
+            var Statuses = GetStatuses(twDocument);
+
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.White;
+
+            for (i = 0; i != Statuses.Length; i += 1)
             {
                 Console.Out.WriteLine(Statuses[i]);
             }

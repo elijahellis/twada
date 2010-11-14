@@ -8,3 +8,8 @@ C:\Users\Elijah\Documents\Visual Studio 2010\C# Projects\twada\twada\bin\Debug\t
 C:\Users\Elijah\Documents\Visual Studio 2010\C# Projects\twada\twada\bin\Debug\twada.pdb
 C:\Users\Elijah\Documents\Visual Studio 2010\C# Projects\twada\twada\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Elijah\Documents\Visual Studio 2010\C# Projects\twada\twada\obj\x86\Debug\twada.pdb
+C:\Users\Elijah\GitProjects\twada\twada\twada\obj\x86\Debug\twada.exe
+C:\Users\Elijah\GitProjects\twada\twada\twada\obj\x86\Debug\twada.pdb
+C:\Users\Elijah\GitProjects\twada\twada\twada\bin\Debug\twada.exe
+C:\Users\Elijah\GitProjects\twada\twada\twada\bin\Debug\twada.pdb
+C:\Users\Elijah\GitProjects\twada\twada\twada\obj\x86\Debug\ResolveAssemblyReference.cache
